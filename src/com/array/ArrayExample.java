@@ -5,7 +5,7 @@ public class ArrayExample {
 	public static void main(String[] args) {
 
 		//single-dimensional array
-		int arr[]= {100,200,300,400,500,600,700};
+		int arr[]= {100,200,300,400,500};
 		for(int i=0;i<5;i++) {
 			System.out.println("Elements of array a: "+arr[i]);
 		}
