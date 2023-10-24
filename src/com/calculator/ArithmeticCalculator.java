@@ -2,7 +2,7 @@ package com.calculator;
 
 import java.util.Scanner;
 
-public class ArthimaticCalculator {
+public class ArithmeticCalculator {
 
 
 
