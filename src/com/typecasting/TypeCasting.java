@@ -1,3 +1,4 @@
+package com.typecasting;
 
 public class TypeCasting {
 
