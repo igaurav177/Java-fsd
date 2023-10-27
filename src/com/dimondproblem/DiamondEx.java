@@ -9,7 +9,7 @@ public class DiamondEx implements FirstInterface, SecondInterface {
 	public static void main(String[] args) {
 		DiamondEx diamondObj = new DiamondEx();
 		diamondObj.display();
-
+		
 	}
 
 }
