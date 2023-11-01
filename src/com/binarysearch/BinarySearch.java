@@ -1,5 +1,6 @@
 package com.binarysearch;
 
+import java.util.Arrays;
 public class BinarySearch {
 	public static int binarySearch(int arr[], int target) {
 		int start=0;
@@ -20,6 +21,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int arr[] = {10,20,40,60,80};
+		
 		System.out.println(binarySearch(arr, 40));
  
 	}
