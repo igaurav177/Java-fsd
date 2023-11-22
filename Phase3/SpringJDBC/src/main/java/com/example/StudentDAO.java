@@ -36,8 +36,8 @@ public class StudentDAO {
 		return temp.update(sql);
 	}
 	
-	public int update(Student sobj) {
-		String sql ="update student set email='"+sobj.getEmail()+"' where id='"+sobj.getId()+"'";
+	public int update( int id,String email) {
+		String sql ="update student set semail='"+email+"' where sid='"+id+"'";
 		return  temp.update(sql);
 	}
 	

@@ -12,18 +12,18 @@ public class StudentMain {
 		Student s=ac.getBean(Student.class);
 		StudentDAO dao=ac.getBean(StudentDAO.class);
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter student id value ");
-		s.setId(sc.nextInt());
-		System.out.println("enter student name value ");
-		s.setName(sc.next());
-		System.out.println("enter student email value");
-		s.setEmail(sc.next());
-		if(dao.insert(s)>0) {
-			System.out.println("inserted the record into the student table ");
-		}
-		else {
-			System.out.println("insertion failed ");
-		}
+//		System.out.println("enter student id value ");
+//		s.setId(sc.nextInt());
+//		System.out.println("enter student name value ");
+//		s.setName(sc.next());
+//		System.out.println("enter student email value");
+//		s.setEmail(sc.next());
+//		if(dao.insert(s)>0) {
+//			System.out.println("inserted the record into the student table ");
+//		}
+//		else {
+//			System.out.println("insertion failed ");
+//		}
 //		
 		
 //		System.out.println("Enter student id which you want to delete: ");
@@ -34,13 +34,14 @@ public class StudentMain {
 //			System.out.println("Deletion failed");
 //		}
 		
-		System.out.println("Enter student email id which you want to update:");
-		s.setEmail(sc.next());
 		System.out.println("Enter student id which you want to update email for: ");
-		s.setId(sc.nextInt());
+		int id=sc.nextInt();
+		System.out.println("Enter student email id which you want to update:");
+		String email= sc.next();
 		
-		if(dao.update(s)>0) {
-			System.out.println("For student id: "+s.getId()+" record is updated.");
+		
+		if(dao.update(id,email)>0) {
+			System.out.println("For student id: "+id+" record is updated.");
 		}else {
 			System.out.println("Updation failed");
 		}
