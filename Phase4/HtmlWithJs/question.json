@@ -1,0 +1,28 @@
+{
+    "questions":[
+    
+    
+    {
+        "question":"what is the capital of france?",
+        "choices":["London","Paris","Rome","Berlin"],
+        "correctAnswer":"Paris"
+    },
+    {
+    
+    
+        "question":"India has provided a $250 million Line of Credit to which country for the modernization of its agricultural sector??",
+        "choices":["Nigeria","South Africa","Ethiopia","Kenya"],
+        "correctAnswer":"Kenya"
+    
+    
+    },
+    {
+        
+        "question":"What is Adani Power integrating at its Mundra Power Plant in Gujarat as part of its decarbonization efforts?",
+        "choices" :["Blue Hydrogen","Solar Panels","Wind Energy","Green Ammonia"],
+        "correctAnswer":"Green Ammonia"
+
+    }
+    ]
+    }
+    

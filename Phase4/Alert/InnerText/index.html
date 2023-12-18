@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>  
+  function checkvalidationOfForm(){
+   let name=document.f1.user.value;
+   console.log("the name is entered is "+name)
+   let pass=document.f1.pwd.value;
+   console.log("the pwd is entered is "+pass)
+   let nameStatusofEmpty=""
+let passStatusofEmpty=""
+let namelengthStatus=""
+let other=""
+   if(name==""){
+      nameStatusofEmpty="name should not be empty "
+      document.getElementById("user").innerText=nameStatusofEmpty
+   }
+  if(pass==""){
+   passStatusofEmpty="password must not be empty"
+   document.getElementById("pass").innerText=passStatusofEmpty
+   }
+   if(name==="admin" && pass==="admin"){
+      document.write("Hey Welcome "+name)
+   }
+
+  }
+    </script>
+</head>
+<body>
+   <h1> Login Form</h1>
+   <form name="f1">
+      username<input type="text" name="user"><br>
+      <div id="user" style="color: chocolate;"></div>
+      password<input type="password" name="pwd" ><br>
+      <div id="pass" style="color: chocolate;"></div>
+      <input type="button" value="login" onclick="checkvalidationOfForm()" >
+   
+   </form>
+</body>
+</html>

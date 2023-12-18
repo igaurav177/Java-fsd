@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="config.js"></script>
+  <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Form</h1>
+  <form name="stu">
+    
+     Student Id: <input type="text"  name="id" > <br>
+
+    
+    Student Name: <input type="text"  name="name" > <br>
+
+    
+    Student Email:<input type="email"  name="email" ><br>
+
+    
+    Student Password: <input type="password"  name="password" ><br>
+
+    Student Gender:
+    <input type="radio"  name="gender" value="male"> Male</label>
+    <input type="radio"  name="gender" value="female"> Female</label>
+    <br>
+    Favourite Games:
+    <label for="chess"><input type="checkbox"  name="favGame" value="chess"> Chess</label>
+    <label for="football"><input type="checkbox"  name="favGame" value="football"> Football</label>
+    <br>
+    Student Course List:
+    <select name="course">
+      <option value="c">C</option>
+      <option value="c++">C++</option>
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+    </select>
+    <br>
+    address:
+    <textarea name="address" rows="4" ></textarea>
+    <br>
+    <input type="button" value="submit" onclick="checkvalidationOfForm()" >
+  </form>
+
+</body>
+</html>
